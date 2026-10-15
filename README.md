@@ -3,6 +3,8 @@
 **Sprechen statt tippen.** Wortlaut ist eine Windows-App für Diktate: Du sprichst, eine KI bereitet den Text auf, und er landet direkt in dem Programm, in dem du gerade schreibst – E-Mail, Chat, Dokument, Ticket oder KI-Prompt.
 
 > Dieses Repository ist der **öffentliche Release-Kanal**. Es enthält ausschließlich die fertigen Programmdateien und Prüfsummen, keinen Quellcode.
+>
+> Projektseite: **[oesterle.cloud/wortlaut](https://oesterle.cloud/wortlaut/)**
 
 ---
 
@@ -18,6 +20,7 @@
 - [Lizenz und Nutzungsbedingungen](#lizenz-und-nutzungsbedingungen)
 - [Haftungsausschluss](#haftungsausschluss)
 - [Marken](#marken)
+- [Unterstützen](#unterstützen)
 - [Kontakt](#kontakt)
 - [English summary](#english-summary)
 
@@ -34,7 +37,7 @@
 | **Stichpunkte / Task** | Zusammenfassung als Stichpunkte oder als Aufgabenbeschreibung. |
 | **Umschreiben** | Markierten Text per Sprachanweisung umformulieren. |
 
-Dazu: persönliches Glossar für Fachbegriffe und Namen, persönlicher Stil (Anrede, Gruß, Länge), lokaler Verlauf der letzten Ergebnisse, frei belegbare Tastenkürzel.
+Dazu: persönliches Glossar für Fachbegriffe und Namen, persönlicher Stil (Anrede, Gruß, Länge), lokaler Verlauf der letzten Ergebnisse, Bilanz mit Verarbeitungsdauer je Anbieter, frei belegbare Tastenkürzel.
 
 **KI-Anbieter nach Wahl:** oneAI, OpenAI, Anthropic (Claude), Google Gemini und Mistral. Fällt der erste Anbieter aus oder antwortet zu langsam, übernimmt automatisch der nächste eingerichtete.
 
@@ -45,7 +48,7 @@ Dazu: persönliches Glossar für Fachbegriffe und Namen, persönlicher Stil (Anr
 | | |
 |---|---|
 | Betriebssystem | Windows 10 oder 11, 64 Bit |
-| Laufzeit | keine zusätzliche Installation nötig – die .NET-Laufzeit ist in der Programmdatei enthalten |
+| Laufzeit | keine zusätzliche Installation nötig – die .NET-Laufzeit ist in der Programmdatei enthalten (ab Version 2.0.13) |
 | KI-Zugang | Ein eigener API-Schlüssel bei mindestens einem Anbieter, der Sprache erkennt (oneAI, OpenAI, Gemini oder Mistral) |
 | Mikrofon | beliebig, Headset empfohlen |
 
@@ -113,7 +116,7 @@ Für die Verarbeitung durch den gewählten KI-Anbieter gelten dessen Bedingungen
 
 Wortlaut ist **kein Open-Source-Projekt**. Die Nutzung ist kostenlos; es gelten die [Nutzungsbedingungen](LICENSE.md).
 
-Wortlaut enthält Komponenten Dritter unter eigenen Lizenzen (u. a. die Schriften Inter und Instrument Serif unter der SIL Open Font License, NAudio unter der MIT-Lizenz). Details: [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+Wortlaut enthält Komponenten Dritter unter eigenen Lizenzen (u. a. die .NET-Laufzeit, die Schriften Inter und Instrument Serif unter der SIL Open Font License, NAudio unter der MIT-Lizenz). Details: [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
 ---
 
@@ -129,22 +132,29 @@ oneAI, OpenAI, Anthropic, Claude, Google, Gemini, Mistral, ClickUp, Windows und 
 
 ---
 
+## Unterstützen
+
+Wortlaut bleibt kostenlos. Wenn es dir regelmäßig Tipparbeit abnimmt, kannst du die Weiterentwicklung freiwillig und ohne Gegenleistung unterstützen: **[oesterle.cloud → Unterstützen](https://oesterle.cloud/#unterstuetzen)**. Genauso hilfreich: Wortlaut weiterempfehlen und Feedback geben.
+
+---
+
 ## Kontakt
 
 - **Feedback und Fehler:** direkt in der App über *Tray → Feedback senden*
 - **Sicherheitslücken:** bitte nicht öffentlich melden, sondern wie in [SECURITY.md](SECURITY.md) beschrieben
-- **Herausgeber:** Thomas Oesterle
+- **Herausgeber:** Thomas Oesterle · [oesterle.cloud](https://oesterle.cloud/)
 
 ---
 
 ## English summary
 
-**Wortlaut** is a Windows dictation app: speak, an AI cleans up the text, and it is pasted into the app you are working in. This repository is the **public release channel** and contains only signed-off binaries and SHA-256 checksums, no source code.
+**Wortlaut** is a Windows dictation app: speak, an AI cleans up the text, and it is pasted into the app you are working in. This repository is the **public release channel** and contains only signed-off binaries and SHA-256 checksums, no source code. Project page: [oesterle.cloud/wortlaut](https://oesterle.cloud/wortlaut/).
 
 - **Requirements:** Windows 10/11 x64 (no separate .NET installation needed, the runtime is built in), your own API key for at least one speech-capable provider (oneAI, OpenAI, Gemini or Mistral).
 - **Privacy:** audio and text are sent only while dictating and directly to the provider you configured. Glossary, style, settings and history stay on your PC.
 - **Updates:** checked against this repository at start-up and every three hours, installed only after confirmation and checksum verification.
 - **License:** freeware, not open source – see [LICENSE.md](LICENSE.md) (German). Third-party components: [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 - **Disclaimer:** provided free of charge and without warranty. AI output may contain errors; review before sending.
+- **Support:** Wortlaut stays free. If it saves you time, you can support it voluntarily at [oesterle.cloud](https://oesterle.cloud/#unterstuetzen).
 
 © 2026 Thomas Oesterle. Alle Rechte vorbehalten.

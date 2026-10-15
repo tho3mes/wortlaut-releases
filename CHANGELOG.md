@@ -2,6 +2,16 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.0.14 (beta.14) – 15.10.2026
+
+**Geändert**
+- Tray aufgeräumt: „Zugang anfragen“ entfernt, „Zeit buchen“ erscheint nur noch, wenn eine Zeitbuchung eingerichtet ist (dann auch erst das Kürzel).
+- Feedback-Dialog und Glossar mit passenden Texten: Feedback geht direkt an den Entwickler, das Glossar liegt nur auf deinem PC.
+- Klarere Meldungen, wenn kein KI-Anbieter bereit ist oder die Aufbereitung scheitert.
+
+**Neu**
+- Tray → „Wortlaut unterstützen“ führt zur Projektseite.
+
 ## 2.0.13 (beta.13) – 15.10.2026
 
 **Neu**
