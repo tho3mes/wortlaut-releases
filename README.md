@@ -1,0 +1,2 @@
+# wortlaut-releases
+Releasekanal
