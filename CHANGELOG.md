@@ -2,6 +2,17 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.0.12 (beta.12) – 15.10.2026
+
+**Geändert**
+- Herausgeber und Copyright: Thomas Oesterle (auch in den Dateieigenschaften der EXE).
+- Neuer Datenschutzhinweis in der App; er wird einmal neu bestätigt.
+- Info-Seite mit Links zu Nutzungsbedingungen, Lizenzen Dritter und Release-Seite.
+- Verbindungsseite zeigt alle KI-Anbieter und testet sie einzeln.
+
+**Entfernt**
+- „Zugang anfragen“ und die Anzeige der alten Server-Adressen.
+
 ## 2.0.11 (beta.11) – 15.10.2026
 
 **Neu**
