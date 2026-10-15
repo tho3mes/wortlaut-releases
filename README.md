@@ -45,7 +45,7 @@ Dazu: persönliches Glossar für Fachbegriffe und Namen, persönlicher Stil (Anr
 | | |
 |---|---|
 | Betriebssystem | Windows 10 oder 11, 64 Bit |
-| Laufzeit | [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0) |
+| Laufzeit | keine zusätzliche Installation nötig – die .NET-Laufzeit ist in der Programmdatei enthalten |
 | KI-Zugang | Ein eigener API-Schlüssel bei mindestens einem Anbieter, der Sprache erkennt (oneAI, OpenAI, Gemini oder Mistral) |
 | Mikrofon | beliebig, Headset empfohlen |
 
@@ -57,7 +57,7 @@ Für Claude (Anthropic) gilt: Der Anbieter verarbeitet nur Text. Er eignet sich 
 
 1. Unter [**Releases**](../../releases/latest) die Datei `Wortlaut.exe` herunterladen.
 2. Einen eigenen Ordner anlegen, in dem du Schreibrechte hast, z. B. `%LOCALAPPDATA%\Programs\Wortlaut`, und die Datei dorthin verschieben. In diesem Ordner kann sich Wortlaut später selbst aktualisieren.
-3. `Wortlaut.exe` starten. Das Symbol erscheint im Infobereich der Taskleiste.
+3. `Wortlaut.exe` starten. Das Symbol erscheint im Infobereich der Taskleiste. Der erste Start kann einige Sekunden dauern, weil die eingebaute Laufzeit vorbereitet wird.
 
 **Hinweis zu Windows SmartScreen:** Die Programmdatei ist derzeit nicht digital signiert. Windows kann deshalb beim ersten Start „Der Computer wurde durch Windows geschützt“ anzeigen. Prüfe zuerst die Prüfsumme (siehe unten) und wähle dann *Weitere Informationen → Trotzdem ausführen*.
 
@@ -141,7 +141,7 @@ oneAI, OpenAI, Anthropic, Claude, Google, Gemini, Mistral, ClickUp, Windows und 
 
 **Wortlaut** is a Windows dictation app: speak, an AI cleans up the text, and it is pasted into the app you are working in. This repository is the **public release channel** and contains only signed-off binaries and SHA-256 checksums, no source code.
 
-- **Requirements:** Windows 10/11 x64, [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0), your own API key for at least one speech-capable provider (oneAI, OpenAI, Gemini or Mistral).
+- **Requirements:** Windows 10/11 x64 (no separate .NET installation needed, the runtime is built in), your own API key for at least one speech-capable provider (oneAI, OpenAI, Gemini or Mistral).
 - **Privacy:** audio and text are sent only while dictating and directly to the provider you configured. Glossary, style, settings and history stay on your PC.
 - **Updates:** checked against this repository at start-up and every three hours, installed only after confirmation and checksum verification.
 - **License:** freeware, not open source – see [LICENSE.md](LICENSE.md) (German). Third-party components: [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
