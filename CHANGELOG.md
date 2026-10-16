@@ -2,6 +2,11 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.0.15 (beta.15) – 16.10.2026
+
+**Neu**
+- Option „Audio vor dem Senden komprimieren“ (Einstellungen › Technik anzeigen › Aufnahme): Die Aufnahme geht als MP3 statt WAV hinaus, etwa 8-mal kleiner. Spürbar vor allem bei langen Diktaten und langsamer Verbindung. Klappt die Umwandlung nicht, sendet Wortlaut automatisch wie bisher.
+
 ## 2.0.14 (beta.14) – 15.10.2026
 
 **Geändert**
