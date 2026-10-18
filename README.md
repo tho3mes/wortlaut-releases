@@ -15,6 +15,7 @@
 - [Installation](#installation)
 - [Download prüfen](#download-prüfen)
 - [Einrichtung](#einrichtung)
+- [Gedächtnis](#gedächtnis)
 - [Updates](#updates)
 - [Datenschutz](#datenschutz)
 - [Lizenz und Nutzungsbedingungen](#lizenz-und-nutzungsbedingungen)
@@ -37,7 +38,7 @@
 | **Stichpunkte / Task** | Zusammenfassung als Stichpunkte oder als Aufgabenbeschreibung. |
 | **Umschreiben** | Markierten Text per Sprachanweisung umformulieren. |
 
-Dazu: persönliches Glossar für Fachbegriffe und Namen, persönlicher Stil (Anrede, Gruß, Länge), lokaler Verlauf der letzten Ergebnisse, Bilanz mit Verarbeitungsdauer je Anbieter, frei belegbare Tastenkürzel.
+Dazu: persönliches Glossar für Fachbegriffe und Namen, persönlicher Stil (Anrede, Gruß, Länge), lokaler Verlauf mit Suche, optionales Gedächtnis für alles Diktierte, Bilanz mit Verarbeitungsdauer je Anbieter, frei belegbare Tastenkürzel.
 
 **KI-Anbieter nach Wahl:** oneAI, OpenAI, Anthropic (Claude), Google Gemini und Mistral. Fällt der erste Anbieter aus oder antwortet zu langsam, übernimmt automatisch der nächste eingerichtete.
 
@@ -63,6 +64,8 @@ Für Claude (Anthropic) gilt: Der Anbieter verarbeitet nur Text. Er eignet sich 
 3. `Wortlaut.exe` starten. Das Symbol erscheint im Infobereich der Taskleiste. Der erste Start kann einige Sekunden dauern, weil die eingebaute Laufzeit vorbereitet wird.
 
 **Hinweis zu Windows SmartScreen:** Die Programmdatei ist derzeit nicht digital signiert. Windows kann deshalb beim ersten Start „Der Computer wurde durch Windows geschützt“ anzeigen. Prüfe zuerst die Prüfsumme (siehe unten) und wähle dann *Weitere Informationen → Trotzdem ausführen*.
+
+**Hinweis zu Virenscannern und EDR-Lösungen:** Manche Schutzprogramme auf Firmenrechnern blockieren unsignierte neue Programmdateien. Bitte dort nichts umgehen, sondern die Freigabe über deine IT klären.
 
 ---
 
@@ -91,6 +94,17 @@ Die Schlüssel liegen ausschließlich in der Windows-Anmeldeinformationsverwaltu
 
 ---
 
+## Gedächtnis
+
+Ab Version 2.1.0 kann Wortlaut alles, was du diktierst, lokal aufheben und durchsuchbar machen (Einstellungen › Gedächtnis, standardmäßig aus).
+
+- **Suchen:** Mit **Num +** öffnet sich der Verlauf, der Cursor steht im Suchfeld. Wortanfang reicht, Umlaute sind egal, mehrere Wörter grenzen ein, Text in Anführungszeichen sucht die genaue Wortfolge. Filter nach Zeitraum, Programm und Modus.
+- **Aufbewahrung:** frei wählbar von 7 Tagen bis unbegrenzt (Standard 90 Tage). Angeheftete Einträge bleiben, bis du sie löschst.
+- **Sicherheit:** Die Einträge liegen verschlüsselt im Benutzerprofil und sind nur mit deinem Windows-Konto lesbar. Für Speichern und Suchen verlässt nichts den PC.
+- **PC-Wechsel:** Vorher unter Einstellungen › Gedächtnis eine **Sicherung** mit eigenem Kennwort exportieren und auf dem neuen PC importieren.
+
+---
+
 ## Updates
 
 Wortlaut prüft beim Start und danach alle drei Stunden, ob in diesem Repository eine neuere Version vorliegt. Ein Update wird nur nach Rückfrage installiert. Vor der Installation vergleicht Wortlaut die SHA-256-Prüfsumme; stimmt sie nicht, wird das Update verworfen.
@@ -104,7 +118,7 @@ Die Versionshistorie steht in [CHANGELOG.md](CHANGELOG.md) und bei den einzelnen
 Kurz gefasst – ausführlich in [DATENSCHUTZ.md](DATENSCHUTZ.md):
 
 - Aufnahme und Text gehen **nur während eines Diktats** und **direkt** an den KI-Anbieter, den du selbst eingerichtet hast. Ein Server des Herausgebers ist nicht dazwischengeschaltet.
-- Glossar, Stil, Einstellungen und Verlauf liegen **nur lokal** auf deinem PC. Der Verlauf ist verschlüsselt und wird nach 24 Stunden gelöscht; er lässt sich abschalten.
+- Glossar, Stil, Einstellungen, Verlauf und Gedächtnis liegen **nur lokal** auf deinem PC. Der Verlauf ist verschlüsselt und wird nach 24 Stunden gelöscht; das Gedächtnis ist verschlüsselt, standardmäßig aus und hält sich an die gewählte Frist.
 - Die Logdatei enthält keine Diktatinhalte.
 - Für die Update-Prüfung ruft Wortlaut die öffentliche Schnittstelle von GitHub auf.
 
@@ -140,7 +154,7 @@ Wortlaut bleibt kostenlos. Wenn es dir regelmäßig Tipparbeit abnimmt, kannst d
 
 ## Kontakt
 
-- **Feedback und Fehler:** direkt in der App über *Tray → Feedback senden*
+- **Feedback und Fehler:** in der App über *Tray → Feedback senden* (per E-Mail oder als Beitrag hier auf GitHub) oder direkt an feedback@oesterle.cloud
 - **Sicherheitslücken:** bitte nicht öffentlich melden, sondern wie in [SECURITY.md](SECURITY.md) beschrieben
 - **Herausgeber:** Thomas Oesterle · [oesterle.cloud](https://oesterle.cloud/)
 
@@ -151,8 +165,10 @@ Wortlaut bleibt kostenlos. Wenn es dir regelmäßig Tipparbeit abnimmt, kannst d
 **Wortlaut** is a Windows dictation app: speak, an AI cleans up the text, and it is pasted into the app you are working in. This repository is the **public release channel** and contains only signed-off binaries and SHA-256 checksums, no source code. Project page: [oesterle.cloud/wortlaut](https://oesterle.cloud/wortlaut/).
 
 - **Requirements:** Windows 10/11 x64 (no separate .NET installation needed, the runtime is built in), your own API key for at least one speech-capable provider (oneAI, OpenAI, Gemini or Mistral).
-- **Privacy:** audio and text are sent only while dictating and directly to the provider you configured. Glossary, style, settings and history stay on your PC.
+- **Privacy:** audio and text are sent only while dictating and directly to the provider you configured. Glossary, style, settings, history and the optional memory stay on your PC, the memory encrypted and with a retention period of your choice.
+- **Memory (since 2.1.0):** optional local, encrypted and searchable archive of everything you dictated, with password-protected backup for moving to a new PC.
 - **Updates:** checked against this repository at start-up and every three hours, installed only after confirmation and checksum verification.
+- **Feedback:** via the app (e-mail or GitHub issue) or to feedback@oesterle.cloud.
 - **License:** freeware, not open source – see [LICENSE.md](LICENSE.md) (German). Third-party components: [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 - **Disclaimer:** provided free of charge and without warranty. AI output may contain errors; review before sending.
 - **Support:** Wortlaut stays free. If it saves you time, you can support it voluntarily at [oesterle.cloud](https://oesterle.cloud/#unterstuetzen).

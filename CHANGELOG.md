@@ -2,6 +2,30 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.1.0 – 18.10.2026
+
+**Neu**
+- Gedächtnis (Einstellungen › Gedächtnis, standardmäßig aus): Jedes eingefügte Ergebnis wird lokal und verschlüsselt abgelegt, mit Datum, Modus, Programm und auf Wunsch dem Fenstertitel. Aufbewahrung frei wählbar von 7 Tagen bis unbegrenzt (Standard 90 Tage), angeheftete Einträge bleiben. Für Speichern und Suchen verlässt nichts den PC.
+- Verlauf (Num +) mit Suche: Wortanfang reicht, Umlaute sind egal, mehrere Wörter grenzen ein, Text in Anführungszeichen sucht die genaue Wortfolge. Filter nach Zeitraum, Programm und Modus, Treffer markiert, Anheften und Löschen, Bedienung komplett per Tastatur.
+- Sicherung mit eigenem Kennwort (Export und Import), damit das Gedächtnis einen PC- oder Profilwechsel übersteht.
+- Aufnahmefenster mit Pegelbalken wie ein Mikrofonkanal; beim Aufbereiten läuft eine ruhige Welle.
+- Empfehlung für oneAI auf der Seite Verbindung und in „Meine Schlüssel“, mit Link zu oneai.eu. Transparenz: Der Entwickler arbeitet bei der relyon AG, die oneAI anbietet; Wortlaut ist ein privat entwickeltes, unabhängiges Projekt.
+- Signierte Updates: Jede Version hat zusätzlich zur Prüfsumme eine digitale Signatur (`Wortlaut.exe.sig`). Ab 2.1.0 installiert Wortlaut ein Update nur, wenn beides stimmt; die Update-Quelle ist fest eingebaut. Von Hand prüfen: siehe [SECURITY.md](SECURITY.md).
+- „Alle löschen“ unter „Meine Schlüssel“ entfernt alle gespeicherten Schlüssel auf einmal, etwa vor einer Deinstallation.
+
+**Geändert**
+- Ende der Beta.
+- Einstellungen mit neu geordneter Seitenleiste: Gruppen, deutlich markierter aktiver Punkt, nichts überlappt mehr.
+- Hinweise zum Verarbeitungsort je Anbieter: OpenAI, Claude und Gemini können Daten in den USA verarbeiten, Mistral hat seinen Sitz in der EU.
+- Weniger Fehlalarme bei Virenscannern: Die Tastenkürzel laufen über die normale Windows-Anmeldung statt über einen dauerhaften Tastatur-Hook, die Programmdatei ist nicht mehr komprimiert (dadurch größer), und Updates kommen ohne Hilfsskript aus (ab dem nächsten Update nach 2.1.0).
+- Feedback geht per E-Mail an feedback@oesterle.cloud oder auf Wunsch öffentlich als Beitrag auf GitHub, nicht mehr nach ClickUp. Neu: Knopf „Kopieren“ für alle, die im Browser mailen.
+- Datenschutzhinweis um das Gedächtnis und das Löschen der Schlüssel ergänzt; er wird einmal neu bestätigt.
+- Wird Wortlaut ein zweites Mal gestartet, erscheint ein Hinweis, statt dass scheinbar nichts passiert.
+
+**Behoben**
+- Nach einem automatischen Stopp (Stille, Höchstdauer, Taste losgelassen) stand der Stopp-Grund doppelt im Log.
+- Der Info-Text zu 2.0.15 nannte für „Audio komprimieren“ den falschen Ort in den Einstellungen.
+
 ## 2.0.15 (beta.15) – 16.10.2026
 
 **Neu**
