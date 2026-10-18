@@ -2,6 +2,17 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.1.1 – 18.10.2026
+
+> Download jetzt auch als ZIP, damit Browser und Defender die Datei nicht mehr festhalten.
+
+**Neu**
+- Download als ZIP: `Wortlaut.zip` enthält die Programmdatei, Prüfsumme, Signatur und eine kurze Anleitung. Browser und Windows Defender halten eine ZIP beim Herunterladen seltener fest als eine einzelne EXE. Die EXE gibt es weiterhin einzeln.
+- VirusTotal-Bericht: Die Release-Notes verlinken den Prüfbericht der Programmdatei.
+
+**Bekannt**
+- Beim ersten Start kann Windows SmartScreen weiterhin warnen, auch wenn die EXE aus der ZIP kommt. Wortlaut hat noch kein Windows-Zertifikat; eine Store-Version ist in Vorbereitung.
+
 ## 2.1.0 – 18.10.2026
 
 **Neu**

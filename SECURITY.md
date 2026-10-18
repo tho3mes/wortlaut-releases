@@ -10,6 +10,7 @@ Jede Version wird automatisiert gebaut und doppelt abgesichert veröffentlicht:
 
 - **Prüfsumme** `Wortlaut.exe.sha256` (SHA-256): erkennt beschädigte oder vertauschte Downloads (siehe [README](README.md#download-prüfen)).
 - **Signatur** `Wortlaut.exe.sig` (ECDSA P-256 über SHA-256, ab Version 2.1.0): erkennt Manipulation. Der passende öffentliche Schlüssel liegt hier im Repository ([signatur.pub.pem](signatur.pub.pem)) und ist zusätzlich fest in Wortlaut eingebaut. Der private Schlüssel verlässt die automatische Veröffentlichung nie.
+- **ZIP** `Wortlaut.zip` (ab Version 2.1.1): enthält genau dieselbe EXE samt Prüfsumme, Signatur, öffentlichem Schlüssel und Kurzanleitung. Die Prüfsumme der ZIP steht in `Wortlaut.zip.sha256`.
 
 Lade Wortlaut ausschließlich aus diesem Repository oder über die Projektseite herunter. Beim automatischen Update prüft Wortlaut Prüfsumme **und** Signatur selbst und verwirft jede Datei, die nicht passt. Die Update-Quelle ist fest eingebaut und lässt sich nicht umstellen.
 
@@ -21,7 +22,7 @@ openssl dgst -sha256 -verify signatur.pub.pem -signature Wortlaut.exe.sig Wortla
 
 Erwartet wird `Verified OK`.
 
-Hinweis: Diese Signatur ist kein Windows-Codesignaturzertifikat. Beim ersten Start der EXE kann Windows SmartScreen daher weiterhin warnen. Ohne diese Warnung installiert sich Wortlaut über den Microsoft Store, sobald die Store-Version verfügbar ist.
+Hinweis: Diese Signatur ist kein Windows-Codesignaturzertifikat. Beim ersten Start der EXE kann Windows SmartScreen daher weiterhin warnen, auch wenn sie aus der ZIP kommt. Ohne diese Warnung installiert sich Wortlaut über den Microsoft Store, sobald die Store-Version verfügbar ist.
 
 ## Sicherheitslücke melden
 
