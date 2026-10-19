@@ -2,6 +2,20 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.1.4 – 19.10.2026
+
+> Wärmer und ruhiger: neue Farben, gut lesbare Auswahl, und die Vorschau zeigt das Statusfenster so, wie du es gerade einstellst.
+
+**Geändert**
+- Wärmere Farben: Sandtöne statt kaltem Grau, Karten in warmem Elfenbein statt Weiß, Schrift in dunklem Espresso statt Schwarz, aktive Schalter in Terrakotta. Alle Texte bleiben bei mindestens 4,5:1 Kontrast (WCAG 2.1 AA).
+- Die ausgewählte Zeile in Listen (z. B. Mikrofon) ist ein zarter Pfirsichton mit Akzentstrich und dunkler, halbfetter Schrift.
+- Die Live-Ampel steht nur noch unter Technik. Verbindung zeigt Schlüssel und Freischaltung und verweist auf die Ampel.
+- „Farbe“ heißt jetzt „Farbe des Statusfensters“ und nennt, ob Windows gerade hell oder dunkel ist. „Wie Windows“ folgt dem App-Modus von Windows, die Einstellungen selbst bleiben hell.
+
+**Behoben**
+- Das ausgewählte Mikrofon erschien als schwarzer Balken ohne lesbaren Namen.
+- Die Vorschau zeigte das Statusfenster immer in der gespeicherten Farbe, egal was gerade gewählt war. Jetzt zeigt sie Farbe, Position und Modusleiste sofort beim Ändern, auch vor dem Speichern.
+
 ## 2.1.3 – 19.10.2026
 
 > Updates hängen nicht mehr in einer Schleife, und die Einstellungen sind neu gestaltet: klarer, kontrastreicher, alles auf einen Blick.
