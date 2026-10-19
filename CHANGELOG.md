@@ -2,6 +2,39 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.1.2 – 19.10.2026
+
+> EU zuerst, oneAI mit dem Standardmodell deiner Organisation, Verfügbarkeit als Ampel, und der Text landet immer dort, wo du angefangen hast.
+
+**Neu**
+- Technik zeigt die Verfügbarkeit jedes KI-Anbieters live als Ampel (grün, gelb, rot), solange die Seite offen ist, mit Antwortzeit und Uhrzeit der letzten Prüfung. Geprüft wird nur die Anmeldung: keine Inhalte, keine Kosten. Dieselbe Ampel steht auf der Seite Verbindung.
+- Technik zeigt die tatsächliche Reihenfolge der Anbieter mit deinen Schlüsseln, z. B. „oneAI → Mistral“, und sagt, was fehlt, wenn keiner bereit ist.
+- Neue Auswahl „Nur Mistral (EU)“ neben „Automatisch“ und „Nur oneAI“. „Nur OpenAI“ erscheint erst nach der Freischaltung der US-Anbieter.
+- oneAI-Modell wählbar (Technik): Wortlaut zeigt die Modelle, die deine oneAI-Organisation für dich freigegeben hat, etwa die Mistral-Modelle, die in der EU laufen. Standard ist das Standardmodell deiner Organisation.
+
+**Geändert**
+- oneAI nutzt für die Textaufbereitung nicht mehr fest Gemini Flash, sondern das Standardmodell deiner Organisation. Ein gewähltes Modell, das nicht (mehr) für dich freigegeben ist, überspringt Wortlaut. Die Spracherkennung wählt oneAI wie bisher selbst.
+- EU zuerst: Standardmäßig nutzt Wortlaut nur oneAI und Mistral. OpenAI und Google (Gemini) laufen erst, wenn du sie ausdrücklich freischaltest. Vorher nennt Wortlaut die Risiken und fragt einmal nach deinem Einverständnis: Verarbeitung und Speicherung in den USA und US-Recht, Speicherung und Training nach den Bedingungen des Anbieters, Zulässigkeit in Unternehmen.
+- Seite Verbindung und „Meine Schlüssel“ neu sortiert: oneAI (Deutschland) und Mistral (EU) oben, US-Anbieter in einem eigenen Bereich, dessen Schlüssel erst nach der Freischaltung sichtbar sind. Der Hinweis auf oneAI ist kleiner und schlichter.
+- Wer schon Schlüssel für US-Anbieter eingetragen hat, wird beim ersten Start einmal gefragt. Ohne ausdrückliches Ja bleiben sie aus; die Schlüssel bleiben gespeichert.
+- Reihenfolge der Ersatzkette: oneAI, dann Mistral, erst danach freigeschaltete US-Anbieter.
+- Barrierefreiheit: Hinweistexte, Rahmen und Akzente mit mehr Kontrast (WCAG 2.1 AA), Knöpfe und Seitenleiste per Tab, Enter und Leertaste bedienbar, mit sichtbarem Fokusrahmen und Namen für Screenreader. Die Ampel zeigt den Zustand immer auch als Text.
+- Updates laden die ZIP (rund 66 statt 157 MB) und prüfen die enthaltene Programmdatei wie bisher per Prüfsumme und digitaler Signatur. Klappt das nicht, lädt Wortlaut die EXE.
+- Datenschutzhinweis angepasst; er wird einmal neu bestätigt.
+
+**Entfernt**
+- Anthropic (Claude) als direkter Anbieter. Ein gespeicherter Claude-Schlüssel wird nicht mehr genutzt; du kannst ihn in der Windows-Anmeldeinformationsverwaltung entfernen (Einträge `wortlaut-*`).
+- Zeitbuchung (ClickUp) aus den Einstellungen und aus „Meine Schlüssel“.
+
+**Behoben**
+- Mit oneAI scheiterte die Textaufbereitung, wenn deine Organisation Gemini Flash nicht freigegeben hat.
+- Wer während der Aufbereitung in ein anderes Fenster wechselte, bekam den Text dort oder in einem anderen Feld eingefügt. Jetzt landet er im Fenster und Eingabefeld, in dem das Diktat begonnen hat, auch wenn dieses Fenster minimiert ist. Danach springt Wortlaut zurück in das Fenster, in dem du gerade arbeitest, und wartet dabei, bis du kurz nicht tippst. Geht das Zielfenster nicht nach vorn oder wurde es geschlossen, bleibt der Text in der Zwischenablage, statt irgendwo zu landen. Danke für das Feedback!
+- Updates konnten bei langsamer Verbindung nach fünf Minuten abbrechen.
+
+**Bekannt**
+- Das Update auf 2.1.2 selbst läuft noch über den bisherigen Weg (große EXE). Der schnellere Weg über die ZIP greift ab dem nächsten Update.
+- Wechselst du im Browser während der Aufbereitung den Tab, landet der Text im dann sichtbaren Tab. Wortlaut kann Tabs nicht unterscheiden.
+
 ## 2.1.1 – 18.10.2026
 
 > Download jetzt auch als ZIP, damit Browser und Defender die Datei nicht mehr festhalten.
