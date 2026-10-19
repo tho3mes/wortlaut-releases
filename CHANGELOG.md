@@ -2,6 +2,23 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.1.3 – 19.10.2026
+
+> Updates hängen nicht mehr in einer Schleife, und die Einstellungen sind neu gestaltet: klarer, kontrastreicher, alles auf einen Blick.
+
+**Geändert**
+- Einstellungen neu gestaltet: Jede Seite hat eine kurze Erklärung, die Optionen stehen in klar abgegrenzten Karten, je Zeile Beschriftung und Hinweis links, Bedienelement rechts. Schalter statt Häkchen, Auswahlfelder und Eingaben mit deutlichem Rand und runden Ecken, schmale Scrollbalken.
+- Mehr Kontrast und bessere Tastaturbedienung: größere Hinweistexte, dunklere Ränder, gut sichtbarer Fokusrahmen, Screenreader lesen zu jedem Schalter auch den Hinweis vor. Strg+S speichert.
+- Alle Seiten sind immer sichtbar, „Technik anzeigen“ entfällt. Mikrofon und Aufnahme sind eine Seite, „Ausgabe“ heißt jetzt „Einfügen“. Modusleiste und „Modus nach Programm vorwählen“ stehen jetzt unter Modi, direkt bei der Erklärung.
+- Verbindung zeigt jeden Schlüssel in einer eigenen Zeile mit Ort (Deutschland, EU, USA).
+
+**Behoben**
+- Das Update von 2.1.1 auf 2.1.2 konnte in einer Schleife hängen: Wortlaut meldete das Update, startete danach aber wieder in der alten Version und bot es erneut an. Das passierte, wenn sich die alte Version nicht rechtzeitig beendete oder ihre Programmdatei noch gesperrt war. Jetzt wartet die neue Version auf alle alten Wortlaut-Prozesse aus demselben Ordner, schließt hängende, ersetzt die Programmdatei notfalls über Umbenennen und startet nie wieder die alte Version.
+- Wortlaut beendet sich beim Beenden und vor einem Update vollständig.
+
+**Hinweis**
+- Wer noch 2.1.1 hat, bekommt 2.1.3 direkt. Das Ersetzen übernimmt bereits die neue Version, deshalb greift die Korrektur schon bei diesem Update.
+
 ## 2.1.2 – 19.10.2026
 
 > EU zuerst, oneAI mit dem Standardmodell deiner Organisation, Verfügbarkeit als Ampel, und der Text landet immer dort, wo du angefangen hast.
@@ -32,7 +49,7 @@ Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 - Updates konnten bei langsamer Verbindung nach fünf Minuten abbrechen.
 
 **Bekannt**
-- Das Update auf 2.1.2 selbst läuft noch über den bisherigen Weg (große EXE). Der schnellere Weg über die ZIP greift ab dem nächsten Update.
+- Das Update von 2.1.1 auf 2.1.2 kann in einer Schleife hängen (behoben in 2.1.3).
 - Wechselst du im Browser während der Aufbereitung den Tab, landet der Text im dann sichtbaren Tab. Wortlaut kann Tabs nicht unterscheiden.
 
 ## 2.1.1 – 18.10.2026
