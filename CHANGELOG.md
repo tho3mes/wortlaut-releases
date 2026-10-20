@@ -2,6 +2,32 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.2.0 – 20.10.2026
+
+> Frag dein Gedächtnis, gib jedem Modus deine eigene Handschrift, sieh auf einen Blick, welches oneAI-Modell wofür taugt, und gib Virenscannern weniger Anlass zum Alarm. Der größere Schritt vor einer längeren Pause.
+
+**Neu**
+- KI fragen im Verlauf (Num +): Frage ins Suchfeld schreiben, dann „KI fragen“ oder Strg+Enter, z. B. „Was habe ich Brandt zum Angebot geschrieben?“. Wortlaut sucht zuerst auf diesem PC die passendsten Einträge (seltene Wörter zählen mehr, Neueres leicht vorn, „gestern“, „letzte Woche“ oder „diesen Monat“ grenzen den Zeitraum ein) und schickt nur diese, höchstens 12 und gekürzt, mit der Frage an deinen KI-Anbieter, EU zuerst. Die Antwort nennt ihre Quellen als [1], [2] …, links stehen die Einträge dazu. Nur auf Knopfdruck, beim ersten Mal mit Einverständnis, abschaltbar unter Gedächtnis. Frage und Antwort werden nicht gespeichert.
+- Mein Stil je Modus: Für Mail, Nachricht, Diktat, Englisch, Prompt, Task, Stichpunkte und Umschreiben gibt es je ein großes Feld für eigene Anweisungen, z. B. für Mails „Ton stets persönlich, eloquent und nicht zu fordernd“. Die Anweisung geht den eingebauten Vorgaben zu Ton, Form, Länge und Aufbau vor, ändert aber nie Inhalt, Fakten, Zahlen oder Namen. Leer bleibt der eingebaute Standard. Beim Umschreiben geht deine gesprochene Anweisung vor.
+- Kürzel per Tastendruck (Tasten): Feld anklicken und das gewünschte Kürzel einfach drücken, z. B. Num / oder Strg+Alt+D, Wortlaut trägt es selbst ein. Entf löscht, Tab springt weiter. Solange ein Feld aktiv ist, ruhen die Wortlaut-Kürzel, damit nicht versehentlich ein Diktat startet. Doppelt belegte und ungeeignete Tasten (z. B. ein einzelner Buchstabe) meldet die Seite sofort.
+- oneAI-Modelle transparent (Technik): Jedes für dich freigegebene Modell mit Einordnung schnell, ausgewogen oder gründlich, Hinweis EU und „denkt mit“, wofür es sich eignet, der durchschnittlichen Dauer deiner echten Aufbereitungen und dem letzten Testergebnis. Die Kennzeichnung steht auch direkt in den Auswahlfeldern.
+- „Modelle testen“: Ein fester Beispieltext (nie eines deiner Diktate) geht an bis zu 8 Modelle. Gemessen werden Tempo, Antwortverhalten (Einleitung, Markdown, Rückfragen, beantwortet die KI das Diktat, statt es aufzubereiten) und Qualität (Selbstkorrektur, Zahlen, Namen, Füllwörter, Wiederholungen, Form einer Mail), als Punktzahl bis 100. Modelle über 7 Sekunden werden markiert, weil Wortlaut ab 8 Sekunden auf den Ersatz springt.
+- Zwei Modelle wählbar: eins für kurze Modi (Diktat, Nachricht, Stichpunkte, Englisch), eins für anspruchsvolle (Mail, Prompt, Task, Umschreiben, KI fragen). „Empfehlung übernehmen“ setzt beide, nach Test oder, ohne Test, nach Modellname mit EU zuerst.
+- Ordner-Variante zum Download (`Wortlaut-Ordner.zip`): gleicher Inhalt, aber die Bibliotheken liegen neben der Programmdatei, statt beim Start in den Temp-Ordner entpackt zu werden. Gedacht für PCs mit strengem Virenschutz oder EDR-System. Die Ordner-Variante aktualisiert sich als signiertes Ordner-Paket.
+
+**Geändert**
+- Mein Stil neu aufgebaut: oben kompakt Anrede, Länge und Grußformel, darunter „Für alle Texte“ (bisher „Weitere Vorliebe“, jetzt mehrzeilig und bis 1000 statt 300 Zeichen) und die Felder je Modus. Mein Stil speichert jetzt mit allen anderen Einstellungen (Speichern oder Strg+S), die eigenen Knöpfe „Stil speichern“ und „Neu laden“ entfallen.
+- Während der Aufnahme fängt Wortlaut Esc und die Modusbuchstaben nicht mehr über einen Tastatur-Hook ab, sondern meldet genau diese Tasten nur für die Dauer der Aufnahme bei Windows an und gibt sie danach sofort frei. Tastatur-Hooks gelten Virenscannern und EDR-Systemen als Keylogger-Merkmal. Großbuchstaben und Kürzel mit Strg, Alt oder Win gehen während der Aufnahme normal durch.
+- Tasten warnt, wenn ein Kürzel von Windows reserviert oder schon belegt ist (z. B. Win+Alt+D). Solche Kürzel gehen nur über einen Tastatur-Hook.
+- Die Bilanz misst die Verarbeitungsdauer zusätzlich je oneAI-Modell (nur Zahlen).
+- Datenschutzhinweis um „KI fragen“ und den Modelltest ergänzt.
+
+**Hinweis**
+- Die Einordnung nach Modellname ist eine Schätzung. Messwerte und Test zeigen, wie ein Modell bei dir tatsächlich läuft. Ob ein Modell in der EU läuft, zeigt oneAI verbindlich.
+- Mein Stil liegt weiter nur auf diesem PC (`stil.json`). Eigene Fassungen ganzer Prompts über `%APPDATA%\Wortlaut\modi\<name>.txt` funktionieren wie bisher, die Anweisungen je Modus kommen zusätzlich dazu.
+- Von Windows reservierte Kürzel wie Win+Alt+D erreichen das Einstellungsfenster nicht und lassen sich daher nicht per Tastendruck aufnehmen. Einfügen per Strg+V ins Feld geht weiterhin.
+- Mit 2.2 ruht die Weiterentwicklung vorerst; geplante Punkte stehen in der Roadmap auf der Projektseite.
+
 ## 2.1.4 – 19.10.2026
 
 > Wärmer und ruhiger: neue Farben, gut lesbare Auswahl, und die Vorschau zeigt das Statusfenster so, wie du es gerade einstellst.
