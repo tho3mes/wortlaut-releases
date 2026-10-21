@@ -2,6 +2,20 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.2.2 – 21.10.2026
+
+> Der Text landet jetzt auch in Desktop-Apps wie ClickUp und BrainMax direkt am Cursor, statt nur im Verlauf.
+
+**Behoben**
+- In Desktop-Apps auf Chromium- oder Electron-Basis (z. B. ClickUp, BrainMax) kam der Text nicht an, obwohl der Cursor im Feld stand; er musste aus dem Verlauf kopiert werden. Wortlaut sendet Strg+V jetzt wie ein echter Tastendruck (mit Scancode und kurzen Pausen zwischen Strg und V), erkennt solche Apps selbst und wartet, bis ihr Eingabefeld bereit ist.
+- Noch gedrückte Umschalt-, Alt- oder Win-Tasten stören das Einfügen nicht mehr.
+
+**Neu**
+- „Tippen statt Einfügen“ (Einfügen): Für Programme, die das Einfügen weiter verweigern, tippt Wortlaut den Text Zeichen für Zeichen, ganz ohne Zwischenablage. Programmnamen eintragen, z. B. `brainmax`. Zeilenumbrüche kommen als Umschalt+Enter, damit Chats nicht vorzeitig senden. Wechselt währenddessen das Fenster, bricht Wortlaut ab und legt den Text in die Zwischenablage.
+
+**Hinweis**
+- Das Log nennt beim Einfügen jetzt Programm, Fensterklasse und Eingabefeld. Klappt es in einer App weiterhin nicht, hilft diese Zeile bei der Analyse.
+
 ## 2.2.1 – 21.10.2026
 
 > Service-Update für oneAI: Pre-Check und Autopilot wählen je Modus das schnellste verlässliche Modell und die beste Spracherkennung, Störungen kosten deutlich weniger Wartezeit.
