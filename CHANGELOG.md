@@ -2,6 +2,26 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.2.1 – 21.10.2026
+
+> Service-Update für oneAI: Pre-Check und Autopilot wählen je Modus das schnellste verlässliche Modell und die beste Spracherkennung, Störungen kosten deutlich weniger Wartezeit.
+
+**Neu**
+- Pre-Check (Technik): misst auf Knopfdruck alle für dich freigegebenen oneAI-Textmodelle (bis zu 8, fester Beispieltext, Tempo, Antwortverhalten und Qualität) und jede eingerichtete Spracherkennung: oneAI, die Sprachmodelle im oneAI Gateway und Mistral. Für die Spracherkennung spricht Windows einen festen Satz als Testaufnahme, Wortlaut misst Dauer, Ausfälle und Wortfehlerrate. Nie mit deinen Diktaten.
+- Autopilot: empfiehlt aus Pre-Check und deinen echten Messwerten je Modus ein Modell (Diktat, Nachricht, Stichpunkte: schnellstes gutes Modell unter 6 s; Englisch mit höherer Qualitätsschwelle; Mail, Prompt, Task, Umschreiben und KI fragen: beste Qualität unter 7 s; Gleichstand EU zuerst) und die schnellste verlässliche Spracherkennung. „Mit Autopilot übernehmen“ setzt alles mit einem Klick, „Zurücksetzen“ nimmt es zurück.
+- „Täglich prüfen und übernehmen“ (standardmäßig aus): Pre-Check einmal am Tag im Hintergrund, danach übernimmt der Autopilot die Empfehlung.
+
+**Geändert**
+- Störungssperre: Fällt ein Anbieter aus oder antwortet zu langsam, rückt er für 3 Minuten ans Ende der Kette, getrennt für Spracherkennung und Textaufbereitung. Die folgenden Diktate warten nicht erneut auf ihn. Ein Erfolg hebt die Sperre auf, die Live-Ampel zeigt sie an.
+- Zeitgrenze der Spracherkennung nach Länge der Aufnahme: Mit Ersatz dahinter 10 s plus Aufnahmedauer (15 bis 60 s) statt pauschal 60 s, der letzte Anbieter bekommt mehr Zeit (60 bis 180 s). Fällt oneAI aus, springt Wortlaut bei kurzen Diktaten so nach Sekunden statt nach einer Minute auf Mistral.
+- „Modelle testen“ ist im Pre-Check aufgegangen. Eine von Hand geänderte Modellauswahl ersetzt beim Speichern die Zuordnung des Autopiloten je Modus.
+- Datenschutzhinweis um Pre-Check, oneAI Gateway und Störungssperre ergänzt, ohne erneute Bestätigung.
+
+**Hinweis**
+- Die oneAI-Spracherkennung (`/api/transcribe`) wählt ihr Modell selbst. Ein bestimmtes Sprachmodell geht nur über das oneAI Gateway (OpenAI-kompatibel, gleiche Adresse und gleicher Schlüssel). Ob deine Organisation dort Sprachmodelle anbietet, prüft der Pre-Check; ohne Gateway bleibt es bei oneAI und Mistral.
+- Ohne deutsche Windows-Stimme bewertet der Pre-Check die Spracherkennung nur nach Tempo und Zuverlässigkeit. Die Stimme kommt mit dem Sprachpaket Deutsch inklusive Sprachausgabe (Windows-Einstellungen › Zeit und Sprache).
+- Ein fester Wert `grenze_sprache` in `settings.ini` geht der neuen Zeitgrenze weiter vor.
+
 ## 2.2.0 – 20.10.2026
 
 > Frag dein Gedächtnis, gib jedem Modus deine eigene Handschrift, sieh auf einen Blick, welches oneAI-Modell wofür taugt, und gib Virenscannern weniger Anlass zum Alarm. Der größere Schritt vor einer längeren Pause.
