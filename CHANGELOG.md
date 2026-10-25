@@ -2,6 +2,20 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.3.0 – 25.10.2026
+
+> Der Feinschliff: Die Startseite ist jetzt ein Status-Hub mit Bereit zum Diktieren, Verbindung, Gedächtnis und den letzten Diktaten, seltene Optionen liegen in Aufklapp-Bereichen, und die Optik ist feiner geworden.
+
+**Neu**
+- Startseite (Allgemein) als Status-Hub: „Bereit zum Diktieren“ mit dem Kürzel, Knopf „Jetzt diktieren“, Verbindungsstatus, Gedächtnis-Zähler und die letzten drei Diktate mit „Letztes Ergebnis einfügen“, dazu Schnellzugriff auf Mein Stil und Verlauf.
+- Seltene Optionen je Seite in einem Aufklapp-Bereich „Erweitert“: bei Allgemein Start (Mit Windows starten, Tonsignale, Updates), Statusfenster (Anzeigen, Position, Farbe, Vorschau) und Verlauf und Log; bei Aufnahme die Audio-Kompression; bei Einfügen die Programme (Langsame Apps, Tippen statt Einfügen, Ausgeschlossene Apps).
+
+**Geändert**
+- Design-Feinschliff: weichere Fensterschatten, schlankere Knöpfe, feinere Scrollbalken, dezenter Kartenradius; Seitenleiste 222 → 196 px, Zeilenhöhe 34 → 32 px, Symbol 15 → 13,5, Seitentitel 30 → 26, Untertitel 13 → 12,5. Farben und Kontraste bleiben.
+
+**Behoben**
+- Das Speichern der Einstellungen konnte nach dem Status-Hub-Umbau mit einer NullReferenceException abbrechen, weil Start, Statusfenster, Verlauf und Log aus der Startseite verloren gegangen waren, obwohl Speichern() sie las. Sie stehen jetzt unter „Erweitert“ wieder bereit.
+
 ## 2.2.2 – 21.10.2026
 
 > Der Text landet jetzt auch in Desktop-Apps wie ClickUp und BrainMax direkt am Cursor, statt nur im Verlauf.
