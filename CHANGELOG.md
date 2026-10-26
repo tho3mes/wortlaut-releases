@@ -2,6 +2,26 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.3.1 – 26.10.2026
+
+> Aufgeräumter und sparsamer: Seltenes liegt auf allen Seiten unter „Erweitert“, dazu drei kleine Verbesserungen beim Datenschutz.
+
+**Neu**
+- Log nur mit Zählwerten (Allgemein › Erweitert › Verlauf und Log, standardmäßig aus): Statt Datum und Uhrzeit steht nur das Datum, und es werden nur Zahlen wie Version, Dauer einer Aufnahme, Upload-Versuche, HTTP-Status und Anzahlen geschrieben. Modi, Programmnamen, Gerätenamen, Stopp-Gründe und Fehlertexte entfallen. Nur Meldungen nach festen Mustern kommen ins Log, alles andere wird verworfen.
+- Bestand pro Monat beim Export einer Sicherung (Gedächtnis): Der Dialog zeigt je Monat nur die Anzahl der Einträge und die Summe, nie Inhalte, Programme oder Titel.
+- Neue Installationen starten mit einer vorbelegten Ausschlussliste fürs Gedächtnis: `mstsc`, `vnc`, `vncviewer`, `anydesk`, `teamviewer`, `keepass`, `keepassxc`, `1password`, `bitwarden`. Aus diesen Programmen speichert das Gedächtnis nichts. Bestehende Installationen behalten ihre Liste unverändert.
+
+**Geändert**
+- „Erweitert“ auf allen Seiten, überall ein Klick zum Aufklappen: Tasten (Direkt in einen Modus), Modi (Stichpunkte, Task, Mail, Umschreiben), Mein Stil (Für alle Texte, Je Modus), Gedächtnis (Nicht speichern aus diesen Apps, KI fragen erlauben), Verbindung (US-Anbieter, Hinweis zu oneAI) und Technik (Pre-Check und Autopilot, Modelltabelle, Live-Ampel, Netz und Updates).
+- Allgemein: Mit Windows starten, Statusfenster, Position und Farbe stehen wieder offen, wie geplant. Tonsignale, Updates, Verlauf und Log liegen unter „Erweitert“.
+- Technik: Hinweis „Nur für Fortgeschrittene“. Anbieter-Wahl und die beiden Modellwahlen bleiben sichtbar.
+- Die Live-Ampel prüft nur noch, wenn auf der Seite Technik der Bereich „Erweitert“ aufgeklappt ist, und beim Aufklappen sofort einmal. Vorher lief die Prüfung alle 60 Sekunden, solange die Seite offen war.
+
+**Hinweis**
+- Die Warnung zu Kürzeln, die Windows reserviert oder die schon belegt sind, bleibt bei Tasten sichtbar, auch wenn „Direkt in einen Modus“ eingeklappt ist.
+- Der Hinweis auf oneAI steht mit seiner Offenlegung (Der Entwickler arbeitet bei der relyon AG, die oneAI anbietet) zusammen unter „Erweitert“ bei Verbindung.
+- „Log nur mit Zählwerten“ lässt bereits geschriebene Zeilen stehen; zum Entfernen die Logdatei im Ordner löschen. Die Fehlersuche ist damit schwächer.
+
 ## 2.3.0 – 25.10.2026
 
 > Der Feinschliff: Die Startseite ist jetzt ein Status-Hub mit Bereit zum Diktieren, Verbindung, Gedächtnis und den letzten Diktaten, seltene Optionen liegen in Aufklapp-Bereichen, und die Optik ist feiner geworden.
