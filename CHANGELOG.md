@@ -2,6 +2,18 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.4.0 – 03.11.2026
+
+> Zuverlässiger einfügen und mehr Ruhe beim Wechseln: Wortlaut prüft nach dem Einfügen, ob der Text wirklich im Zielfeld gelandet ist, nennt dir die Ziel-App, und ein neuer Schalter „Nicht stören“ lässt dich weiterarbeiten, während der Text für „Letztes Ergebnis einfügen“ bereitliegt.
+
+**Neu**
+- Einfüge-Verifikation: Nach dem Einfügen liest Wortlaut das Zielfeld per UI Automation aus und prüft, ob der Diktat-Text wirklich drinsteht. Schlägt das eindeutig fehl, fokussiert es das Feld erneut und fügt einmal mehr ein. Lässt sich das Feld nicht auslesen, bleibt es beim gewohnten Ablauf.
+- Rückmeldung nennt die Ziel-App: Das Statusfenster zeigt nach dem Einfügen „Eingefügt in …“ mit dem Programmnamen (z. B. „Eingefügt in chrome · Diktat“), die Logdatei nennt zusätzlich Programm, Fensterklasse und Eingabefeld.
+- „Nicht stören“ (Einfügen, standardmäßig aus): Wenn du inzwischen in einer anderen App arbeitest, springt Wortlaut nicht dorthin, sondern legt den Text für „Letztes Ergebnis einfügen“ in die Zwischenablage.
+
+**Hinweis**
+- „KI fragen“ im Gedächtnis ist seit 2.2.0 verfügbar und wird hier nicht erneut eingeführt.
+
 ## 2.3.1 – 26.10.2026
 
 > Aufgeräumter und sparsamer: Seltenes liegt auf allen Seiten unter „Erweitert“, dazu drei kleine Verbesserungen beim Datenschutz.
