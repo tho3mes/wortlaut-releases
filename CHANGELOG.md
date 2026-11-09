@@ -2,6 +2,18 @@
 
 Alle veröffentlichten Versionen von Wortlaut. Die jeweils neueste steht oben.
 
+## 2.4.1 – 09.11.2026
+
+> Behoben: Ein englisches Diktat wurde ungefragt zur E-Mail.
+
+**Behoben**
+- Modus „Englisch“ (E) machte aus jedem Diktat, das nach einer E-Mail klang, eine englische E-Mail mit Anrede und Grußformel („Dear …“, „Best regards“). Ein diktiertes Prompt wurde so zur Mail, obwohl es keines war. Der Modus übersetzt jetzt nur noch und behält Form, Aufbau und Tonfall bei: Anrede, Gruß, Unterschrift und Sätze, die nicht gesprochen wurden, werden nie ergänzt. Danke für den Fehlerbericht!
+- Die Spracherkennung bekam auch im Modus „Englisch“ fest „Diktat auf Deutsch“ vorgehalten, was englisch diktierten Text verfälschen konnte. Dieser Modus bekommt jetzt „Deutsch oder Englisch“, die übrigen Modi bleiben bei Deutsch.
+- Die Basis-Anweisung sprach von einem „deutschen Diktat“. Sie ist jetzt neutral formuliert, weil im Modus „Englisch“ auch englisches Diktat ankommt.
+
+**Hinweis**
+- Eine eigene Prompt-Datei unter `%APPDATA%\Wortlaut\modi\en.txt` geht weiterhin vor. Wer dort eine Fassung mit Anrede und Gruß abgelegt hat, sollte sie prüfen oder löschen.
+
 ## 2.4.0 – 03.11.2026
 
 > Zuverlässiger einfügen und mehr Ruhe beim Wechseln: Wortlaut prüft nach dem Einfügen, ob der Text wirklich im Zielfeld gelandet ist, nennt dir die Ziel-App, und ein neuer Schalter „Nicht stören“ lässt dich weiterarbeiten, während der Text für „Letztes Ergebnis einfügen“ bereitliegt.
